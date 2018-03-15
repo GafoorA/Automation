@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="ItomSanity" verbose="2"><!-- parallel="tests" thread-count="2" -->
+
+
+	<test verbose="1" name="ITOMTest"> <!-- preserve-order="false" -->
+
+		
+		
+		<parameter name="browsername" value="Firefox" />
+		
+		<classes>
+
+		 <class name="com.itom.test.MasterTest">
+				<methods>
+					<include name="run" />
+					</methods>
+				</class> 
+		</classes>
+	</test>
+</suite>
+					
